@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Perspectiva | Design de Interiores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(
+                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.4)
+            ), url("https://via.placeholder.com/1600x900") center/cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background: #000;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .galeria img,
+        .galeria video {
+            width: 100%;
+            border-radius: 12px;
+            transition: transform 0.4s ease;
+        }
+
+        .galeria img:hover,
+        .galeria video:hover {
+            transform: scale(1.03);
+        }
+
+        .sobre {
+            max-width: 800px;
+            font-size: 1.1rem;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .info p {
+            margin-bottom: 10px;
+        }
+
+        .redes a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        iframe {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>PERSPECTIVA</h1>
+        <p>Design de Interiores & Visualização</p>
+    </div>
+</header>
+
+<section>
+    <h2>Projetos</h2>
+    <div class="galeria">
+        <img src="https://via.placeholder.com/600x800" alt="Projeto 1">
+        <img src="https://via.placeholder.com/600x800" alt="Projeto 2">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section>
+    <h2>Sobre</h2>
+    <div class="sobre">
+        <p>
+            A Perspectiva desenvolve projetos de design de interiores com foco
+            em estética contemporânea, funcionalidade e identidade.
+            Criamos ambientes que refletem estilo, conforto e personalidade,
+            unindo técnica e sensibilidade visual.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Contato & Localização</h2>
+    <div class="info">
+        <div>
+            <p><strong>Email:</strong> contato@perspectiva.com</p>
+            <p><strong>Telefone:</strong> (00) 00000-0000</p>
+            <div class="redes">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+        <div>
+            <p><strong>Localização:</strong> Cidade / Estado – Brasil</p>
+            <iframe 
+                src="https://www.google.com/maps"
+                height="250"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Perspectiva • Design de Interiores
+</footer>
+
+</body>
+</html>
